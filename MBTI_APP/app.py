@@ -107,10 +107,10 @@ class MBTIPredictor:
 # === LOAD MODEL ===
 @st.cache_resource
 def load_model():
-    if not os.path.exists("model/mbti_complete_model.pkl"):
+    if not os.path.exists("MBTI_APP/model/mbti_complete_model.pkl"):
         st.error("❌ Model file not found. Make sure 'model/mbti_complete_model.pkl' is available.")
         return None
-    model_bundle = joblib.load("model/mbti_complete_model.pkl")
+    model_bundle = joblib.load("MBTI_APP/model/mbti_complete_model.pkl")
     return model_bundle['mbti_predictor']
 
 predictor = load_model()
