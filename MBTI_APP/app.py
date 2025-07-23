@@ -119,7 +119,7 @@ predictor = load_model()
 # === HEADER ===
 st.markdown("""
     <h1 style='text-align:center;'>MBTI Personality Detector</h1>
-    <p style='text-align:center; font-size:18px;'>Tell us about yourself, and we'll reveal your MBTI personality type based on your words.</p>
+    <p style='text-align:center; font-size:18px;'>"Enter a few sentences to discover your MBTI personality type, based on how thoughts and ideas are expressed through writing.</p>
     <p style='text-align:center; color:#C2185B; font-weight:bold;'>📝 English input only.</p>
 """, unsafe_allow_html=True)
 
