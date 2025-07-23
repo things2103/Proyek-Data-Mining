@@ -10,6 +10,7 @@ Original file is located at
 import streamlit as st
 import joblib
 import os
+import re
 
 # === KONFIGURASI HALAMAN ===
 st.set_page_config(page_title="MBTI Personality", page_icon="🧠", layout="centered")
