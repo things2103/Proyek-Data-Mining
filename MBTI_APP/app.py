@@ -131,6 +131,8 @@ if st.button("🔍 Predict MBTI Type"):
         st.error("❌ Model not loaded.")
     elif user_input.strip() == "":
         st.warning("⚠️ Please enter some text first.")
+     elif len(re.split(r'[.!?]', user_input.strip())) < 2:
+        st.warning("⚠️ Please write **at least 1 complete sentence**.")
     elif len(user_input.split()) > 150:
         st.warning("⚠️ Please write no more than 150 words.")
     else:
